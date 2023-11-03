@@ -1,4 +1,30 @@
 * {
   margin: 0;
-  padding: 0;
+  padding: 0 github;
+}
+
+.planet {
+  background: red;
+  border-radius: 100%;
+}
+.planet.planet--mercury {
+  width: 38.4615384615px;
+  heigth: 38.4615384615px;
+  background: yellow;
+}
+.planet.planet--venus {
+  width: 90.9090909091px;
+  height: 90.9090909091px;
+  background: purple;
+}
+.planet.planet--earth {
+  width: 100px;
+  height: 100px;
+}
+
+.sun {
+  background-color: orange;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
 }/*# sourceMappingURL=main.min.css.map */
