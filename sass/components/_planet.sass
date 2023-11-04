@@ -1,20 +1,46 @@
 @use "../abstract/_variables.sass" as var
 
 .planet
-    background: red
     border-radius: 100%
 
     &.planet--mercury
         width: var.$mercury-size
         heigth: var.$mercury-size
-        background: yellow
+        background-image: url(../../assets/images/mercury.svg)
 
     &.planet--venus 
         width: var.$venus-size
         height: var.$venus-size
-        background: purple
+        background-image: url(../../assets/images/venus.svg)
 
     &.planet--earth
         width: var.$earth-size
-        height: var.$earth-size
+        height: var.$earth-size 
+        background-image: url('../../assets/images/earth.svg')
+
+    &.planet--mars
+        width: var.$mars-size
+        height: var.$mars-size
+        background-image: url(../../assets/images/mars.svg)
+
+    &.planet--jupiter
+        width: var.$jupiter-size
+        height: var.$jupiter-size
+        background-image: url(../../assets/images/jupiter.svg)
+
+    &.planet--saturn
+        width: var.$saturn-size
+        height: var.$saturn-size
+        background-image: url(../../assets/images/saturn.svg)
+
+    &.planet--uranus
+        width: var.$uranus-size
+        height: var.$uranus-size
+        background-image: url(../../assets/images/uranus.svg)
+
+    &.planet--neptune
+        width: var.$neptune-size
+        height: var.$neptune-size
+        background-image: url(../../assets/images/neptune.svg)
+
 
