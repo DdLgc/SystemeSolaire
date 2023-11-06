@@ -1,6 +1,7 @@
 # Systeme Solaire
 
 ## Site Entrainement SASS
+Représentation du systeme solaire avec échelle des planetes (sauf pour le soleil trop GROS).
 
 
 ### Links

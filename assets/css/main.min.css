@@ -5,6 +5,9 @@
 
 .planet {
   border-radius: 100%;
+  border-radius: 100%;
+  height: 150px;
+  width: 150px;
 }
 .planet.planet--mercury {
   width: 38.4615384615px;
