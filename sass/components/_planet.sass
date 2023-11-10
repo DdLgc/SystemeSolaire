@@ -1,38 +1,58 @@
-@use "../abstract/_all.sass" as abstracts
+// @use "../abstract/_all.sass" as abstracts
+
+// .planet
+//     @include abstracts.circle(150px)
+
+//     &.planet--mercury
+//         @include abstracts.circle( abstracts.$mercury-size, $color)
+//         background-image: url(../../assets/images/mercury.svg)
+
+//     &.planet--venus 
+//         @include abstracts.circle( abstracts.$venus-size, $color)
+//         background-image: url(../../assets/images/venus.svg)
+
+//     &.planet--earth
+//         @include abstracts.circle( abstracts.$earth-size, $color)
+//         background-image: url('../../assets/images/earth.svg')
+//         position: relative
+
+//     &.planet--mars
+//         @include abstracts.circle( abstracts.$mars-size, $color)
+//         background-image: url(../../assets/images/mars.svg)
+//         position: relative
+
+//     &.planet--jupiter
+//         @include abstracts.circle( abstracts.$jupiter-size, $color)
+//         background-image: url(../../assets/images/jupiter.svg)
+
+//     &.planet--saturn
+//         @include abstracts.circle( abstracts.$saturn-size, $color)
+//         background-image: url(../../assets/images/saturn.svg)
+
+//     &.planet--uranus
+//         @include abstracts.circle( abstracts.$uranus-size, $color)
+//         background-image: url(../../assets/images/uranus.svg)
+
+//     &.planet--neptune
+//         @include abstracts.circle( abstracts.$neptune-size, $color)
+//         background-image: url(../../assets/images/neptune.svg)
+
+
+@use "../abstract/_all" as abstracts
 
 .planet
     @include abstracts.circle(150px)
 
-    &.planet--mercury
-        @include abstracts.circle( abstracts.$mercury-size, $color)
-        background-image: url(../../assets/images/mercury.svg)
+    &--mercury
+        @include abstracts.circle(abstracts.$mercury-size, green)
 
-    &.planet--venus 
-        @include abstracts.circle( abstracts.$venus-size, $color)
-        background-image: url(../../assets/images/venus.svg)
+    &--venus
+        @include abstracts.circle(abstracts.$venus-size, purple)
 
-    &.planet--earth
-        @include abstracts.circle( abstracts.$earth-size, $color)
-        background-image: url('../../assets/images/earth.svg')
+    &--earth
+        @include abstracts.circle(abstracts.$earth-size, blue)
+        position: relative
 
-    &.planet--mars
-        @include abstracts.circle( abstracts.$mars-size, $color)
-        background-image: url(../../assets/images/mars.svg)
-
-    &.planet--jupiter
-        @include abstracts.circle( abstracts.$jupiter-size, $color)
-        background-image: url(../../assets/images/jupiter.svg)
-
-    &.planet--saturn
-        @include abstracts.circle( abstracts.$saturn-size, $color)
-        background-image: url(../../assets/images/saturn.svg)
-
-    &.planet--uranus
-        @include abstracts.circle( abstracts.$uranus-size, $color)
-        background-image: url(../../assets/images/uranus.svg)
-
-    &.planet--neptune
-        @include abstracts.circle( abstracts.$neptune-size, $color)
-        background-image: url(../../assets/images/neptune.svg)
-
-
+    &--mars
+        @include abstracts.circle(abstracts.$earth-size, red)
+        position: relative
