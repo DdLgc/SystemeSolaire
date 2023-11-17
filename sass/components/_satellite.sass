@@ -1,4 +1,6 @@
 @use "../abstract/_all" as abstracts
+@use "sass:math"
+
     
 .satellite
     background-color: red
@@ -11,13 +13,11 @@
     translate: -50% -50%
     color: white
 
+    
     &--moon
         @extend .satellite
         background-color: grey
-        $center-x : center
-        $center-y : math.div(abstracts.$satellite-size, 2 ) + math.div(abstracts.$earth-size, 2)
-        transform-origin: $center-x $center-y
-        animation: animation-rotate 5s linear infinite
+        @include abstracts.rotate-around-planet($planet-size: abstracts.$earth-size)
 
     &--phobos
         @extend .satellite
