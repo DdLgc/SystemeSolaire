@@ -45,19 +45,23 @@
     @include abstracts.circle(150px)
 
     &--mercury
-        @include abstracts.circle(abstracts.$mercury-size, green)
+        $mercury-background: "../images/mercury.svg"
+        @include abstracts.circle(abstracts.$mercury-size,$mercury-background)
         $distance-between-mercury-and-sun: abstracts.$gap-between-planets
         @include abstracts.rotate-around-sun($distance-between-mercury-and-sun, abstracts.$mercury-size)
 
     &--venus
-        @include abstracts.circle(abstracts.$venus-size, purple)
+        $venus-background: "../images/venus.svg"
+        @include abstracts.circle(abstracts.$venus-size, $venus-background)
         $distance-between-venus-and-sun: 2 * abstracts.$gap-between-planets + abstracts.$mercury-size
         @include abstracts.rotate-around-sun($distance-between-venus-and-sun, abstracts.$venus-size, 15s)
 
     &--earth
-        @include abstracts.circle(abstracts.$earth-size, blue)
+        $earth-background: "../images/earth.svg"
+        @include abstracts.circle(abstracts.$earth-size, $earth-background)
         position: relative
 
     &--mars
-        @include abstracts.circle(abstracts.$mars-size, red)
+        $mars-background: "../images/mars.svg"
+        @include abstracts.circle(abstracts.$mars-size, $mars-background)
         position: relative
